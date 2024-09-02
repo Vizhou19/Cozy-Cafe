@@ -1,0 +1,314 @@
+/* 
+    * 1. HTML
+ TODO 2. Header
+    ? 3. Title
+    ! 4. Events
+    * 5. About us
+ TODO 6. Bible Verses
+    ? 7. Contact us
+*/
+
+/* * 1. HTML */
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: #fcf8e9 !important;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+/* TODO 2. Header */
+
+header nav {
+  padding: 0.4rem;
+  position: sticky;
+}
+
+nav.navbar,
+.navbar-expand-lg,
+.bg-body-tertiary {
+  background-color: #202020 !important;
+}
+
+header ul {
+  list-style: none;
+  margin: 5px 0 auto 20px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.75vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .anchor-text {
+    font-size: 1.2rem;
+    position: relative;
+    left: 10px;
+  }
+}
+
+header nav .logo {
+  position: relative;
+  bottom: 0.2rem;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+header nav a:hover {
+  color: #7c1ad8;
+}
+
+@media only screen and (max-width: 480px) {
+  header nav a:hover {
+    color: inherit;
+  }
+}
+
+/* ? Title */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(imgs/background-img.avif);
+  background-size: cover;
+  height: 60rem;
+  width: auto;
+  color: white;
+}
+
+.title h1 {
+  font-size: 5rem;
+  font-family: "Damion", cursive;
+}
+
+.title h4 {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+    height: 45rem;
+  }
+
+  .title h1 {
+    font-size: 4rem;
+  }
+
+  .title h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ! Events */
+
+.events h2 {
+  font-size: 3rem;
+  margin-bottom: 45px;
+}
+
+.events h3 {
+  font-size: 2.45rem;
+}
+
+.card {
+  width: 18rem;
+}
+
+.drinks,
+.snacks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.space {
+  margin-top: 0.25rem;
+}
+
+.ingredients {
+  margin: 15px 25px;
+  font-size: 1.15rem;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 25rem;
+  }
+
+  .drinks,
+  .snacks {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+  }
+
+  button {
+    width: 45%;
+    position: relative;
+    left: 100px;
+  }
+
+  .snacks button {
+    top: 20px;
+  }
+
+  .price {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #quantity {
+    font-size: 1.2rem;
+  }
+
+  .amount {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+h2,
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.playlists,
+.special-description {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .special-description {
+    font-size: 0.5rem;
+  }
+}
+
+table {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+  max-width: 100%;
+  table-layout: fixed;
+}
+
+table th,
+table td {
+  border: 1px solid black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table th {
+  background-color: rgb(199, 199, 199) !important;
+}
+
+.dates td {
+  border: 1px solid grey;
+  padding-right: 25px;
+}
+
+/* * About Us */
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2.5rem;
+}
+
+.about-us {
+  margin: 25px 100px 45px;
+}
+
+@media only screen and (max-width: 767px) {
+  .about {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .about {
+    font-size: 1.2rem;
+  }
+}
+
+/* TODO Bible Verse */
+
+.chapter {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.chapter strong {
+  position: relative;
+  left: 25px;
+}
+.verse {
+  font-size: 2.2rem;
+}
+
+.v-o-t-d {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("imgs/waves.webp");
+  background-size: cover;
+  height: 35rem;
+  width: 45rem;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: rgba(255, 255, 13, 0.918);
+}
+
+@media only screen and (max-width: 767px) {
+  .verse {
+    font-size: 1.2rem;
+  }
+
+  .v-o-t-d {
+    width: 25rem;
+    height: 15rem;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .verse {
+    font-size: 1.5rem;
+  }
+
+  .v-o-t-d {
+    width: 25rem;
+    height: 15rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ? Contact us */
+
+footer {
+  margin-left: 25px;
+  margin-top: 25px;
+}
